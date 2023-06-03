@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora de Divisão de Conta</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+</head>
+
+<body>
+    <main>
+        <h1>Calculadora de Divisão de Conta</h1>
+
+        <table id="productsTable">
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Consumidores</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="productInput"></td>
+                <td><input type="number" id="priceInput"></td>
+                <td>
+                    <input type="text" id="consumersInput">
+                    <button onclick="addConsumer()">Adicionar</button>
+                </td>
+            </tr>
+        </table>
+
+        <button onclick="calculateBill()">Calcular Conta</button>
+
+        <table id="billTable">
+            <tr>
+                <th>Consumidor</th>
+                <th>Valor Consumido</th>
+                <th>Taxa de Serviço (10%)</th>
+                <th>Total a Pagar</th>
+            </tr>
+        </table>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

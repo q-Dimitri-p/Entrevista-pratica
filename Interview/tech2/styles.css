@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: lightgreen;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    animation: main 2s;
+    border: solid 2px black;
+    box-shadow: black 5px 10px 8px;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+@keyframes main {
+    from {
+        filter: blur(5px);
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 750px) {
+    main {
+        width: 80%;
+    }
+
+    table {
+        width: 80%;
+    }
+
+    input {
+        width: 30%;
+    }
+}
